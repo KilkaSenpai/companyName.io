@@ -211,10 +211,6 @@ document.querySelector('.js-mobileOn').onclick = function () {
 
 document.querySelector('.js-mobileOff').onclick = function () {
     document.querySelector('.header-menu').style.left = '-150%';
+    document.querySelector('.header-menu').style.display = 'block';
     document.querySelector('body').classList.remove('dark');
 }
-
-//lazy load
-$(function ($) {
-    $(".lazy").Lazy();
-});
