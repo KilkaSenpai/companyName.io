@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompanyName</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+<body>
+  <header class="header">
+  <button class="header__open-menu mobile-btn js-mobileOn" type="button">
+    <span class="visually-hidden">Open menu</span>
+  </button>
+  <a class="header__search mobile-btn" href="#">
+    <span class="visually-hidden">Search link</span>
+  </a>
+  <div class="header__top-wrap">
+    <div class="container">
+      <div class="header__top">
+        <a class="logo">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:380505005000">+38 (050) 500 50 00</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--email" href="mailto:info@webosnova.com">info@webosnova.com</a>
+          </li>
+        </ul>
+        <ul class="icons">
+          <li class="icons__item">
+            <a class="icons__link" href="#">
+              <svg class="icons__svg icons__svg--facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path fill="currentColor"
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a class="icons__link" href="#">
+              <svg class="icons__svg icons__svg--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path fill="currentColor"
+                  d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a class="icons__link" href="#">
+              <svg class="icons__svg icons__svg--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                </path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class=" btn header__link" href="#">Заказать услуги</a>
+      </div>
+    </div>
+  </div>
+  <div class="header__menu">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Заказчику</a>
+              <ul class="dropdowns">
+                <li class="dropdowns__item">
+                  <a class="dropdowns__link" href="#">Вопрос/ответ</a>
+                </li>
+                <li class="dropdowns__item">
+                  <a class="dropdowns__link" href="#">Гарантийные обязательства</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О компании</a>
+              <ul class="dropdowns">
+                <li class="dropdowns__item">
+                  <a class="dropdowns__link" href="#">Отзывы</a>
+                </li>
+                <li class="dropdowns__item">
+                  <a class="dropdowns__link" href="#">Примеры работ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="header__form">
+          <button class="header__btn open-js" type="button"></button>
+          <div class="header__box">
+            <input class="header__input" type="text" id="search" placeholder="Поиск">
+            <label for="search"></label>
+            <button class="header__btn search-js" type="button"></button>
+          </div>
+          <button class="header__btn close-js" type="button"></button>
+        </form>
+      </div>
+      <nav class="header-menu">
+    <button class="header-menu__close js-mobileOff">
+        <span class="visually-hidden">
+            Close menu
+        </span>
+    </button>
+    <ul class="header-menu__list">
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Услуги
+            </a>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Заказчику
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Вопрос/ответ
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Гарантийные обязательства
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                О компании
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Отзывы
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Примеры работ
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Статьи
+            </a>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Контакты
+            </a>
+        </li>
+    </ul>
+    <ul class="header-menu__list">
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Производство защитной сет
+            </a>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Отделочные работы
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Выравнивание полов, стяжки
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Укладка плитки,мозаики,
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Сооружение конструкций из
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Установка дверей, окон
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Укладка плитки
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Укладка плитки
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Поклейка обоев
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Ремонт и обслуживание быт
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Ремонт и установка кондиц
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Ремонт холодильников
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Ремонт кофеварок и кофема
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Ремонт бытовой аудиотехни
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Ремонт стиральных и сушил
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Ремонт и установка спутни
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Услуги проката и аренды
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Аренда инструмента и обор
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Аренда транспортных средс
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Аренда оборудования для в
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Аренда медицинской техник
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Аренда офисной техники
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Туристические услуги
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Международный туризм
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Внутренний туризм
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Спортивный туризм и актив
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Организация деловых поезд
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Санаторно-курортные оздор
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Услуги сферы здоровья и к
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Косметологические услуги
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Парикмахерские услуги
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Услуги визажиста
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Маникюр и педикюр
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Массаж
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Тату хной
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Сельскохозяйственные услу
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Услуги по обработке почвы
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Услуги уборки урожая
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Услуги мелиорации
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Услуги мониторинга полей
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Агроанализы
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="header-menu__item">
+            <a class="header-menu__link" href="#">
+                Бухгалтерские и аудиторск
+            </a>
+            <button class="header-menu__btn js_btn">
+                <span class="visually-hidden">
+                    open sumlist
+                </span>
+            </button>
+            <ul class="header-menu__box js_list">
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Аудиторские услуги
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Ведение бухгалтерского уч
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Составление и подача бухг
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Кадровые исследования
+                    </a>
+                </li>
+                <li class="header-menu__list">
+                    <a class="header-menu__sublink" href="#">
+                        Настройка и администриров
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="contacts">
+        <li class="contacts__item">
+            <a class="contacts__link" href="tel:380505005000">+38 (050) 500 50 00</a>
+        </li>
+        <li class="contacts__item">
+            <a class="contacts__link contacts__link--email" href="mailto:info@webosnova.com">info@webosnova.com</a>
+        </li>
+    </ul>
+    <ul class="icons">
+        <li class="icons__item">
+            <a class="icons__link" href="#">
+                <svg class="icons__svg icons__svg--facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                    </path>
+                </svg>
+            </a>
+        </li>
+        <li class="icons__item">
+            <a class="icons__link" href="#">
+                <svg class="icons__svg icons__svg--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                        d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z">
+                    </path>
+                </svg>
+            </a>
+        </li>
+        <li class="icons__item">
+            <a class="icons__link" href="#">
+                <svg class="icons__svg icons__svg--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                    </path>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</nav>
+    </div>
+  </div>
+
+</header>
+  <section class="service-preview">
+  <div class="service-preview__container swiper-container">
+    <ul class="service-preview__items swiper-wrapper">
+      <li class="service-preview__item swiper-slide">
+        <article class="preview-card service-preview__bg"
+          style="background-image: url(images/slider-items/service-preview__item1.jpg);">
+          <div class="container">
+            <div class="preview-card__inner">
+              <h2 class="preview-card__title">
+                Отделочные работы
+              </h2>
+              <h3 class="preview-card__text">
+                Все виды работ
+              </h3>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="service-preview__item swiper-slide">
+        <article class="preview-card service-preview__bg"
+          style="background-image: url(images/slider-items/service-preview__item2.jpg);">
+          <div class="container">
+            <div class="preview-card__inner">
+              <h2 class="preview-card__title">
+                Строительство
+              </h2>
+              <h3 class="preview-card__text">
+                Все виды услуг
+              </h3>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="service-preview__item swiper-slide">
+        <article class="preview-card service-preview__bg"
+          style="background-image: url(images/slider-items/service-preview__item3.jpg);">
+          <div class="container">
+            <div class="preview-card__inner">
+              <h2 class="preview-card__title">
+                Красота и здоровье
+              </h2>
+              <h3 class="preview-card__text">
+                Все виды услуг
+              </h3>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="service-preview__item swiper-slide">
+        <article class="preview-card service-preview__bg"
+          style="background-image: url(images/slider-items/service-preview__item4.jpg);">
+          <div class="container">
+            <div class="preview-card__inner">
+              <h2 class="preview-card__title">
+                Сельскохозяйственные услуги
+              </h2>
+              <h3 class="preview-card__text">
+                Все типы работ
+              </h3>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="service-preview__item swiper-slide">
+        <article class="preview-card service-preview__bg"
+          style="background-image: url(images/slider-items/service-preview__item5.jpg);">
+          <div class="container">
+            <div class="preview-card__inner">
+              <h2 class="preview-card__title">
+                Бухгалтерские и аудиторские услуги
+              </h2>
+              <h3 class="preview-card__text">
+                Ведение бухгалтерского учета
+              </h3>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="service-preview__item swiper-slide">
+        <article class="preview-card service-preview__bg"
+          style="background-image: url(images/slider-items/service-preview__item6.jpg);">
+          <div class="container">
+            <div class="preview-card__inner">
+              <h2 class="preview-card__title">
+                Юридические услуги
+              </h2>
+              <h3 class="preview-card__text">
+                Все виды услуг
+              </h3>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <div class="service-preview__arrows">
+      <button class="service-preview__arrow service-preview__arrow--left" type="button">
+      </button>
+      <button class="service-preview__arrow service-preview__arrow--right" type="button"></button>
+      <div class="service-preview__pagination pagination"></div>
+    </div>
+  </div>
+</section>
+  <section class="service">
+  <div class="container">
+    <div class="service__title-wrap">
+      <h3 class="service__title title">
+        Наши услуги
+      </h3>
+    </div>
+    <ul class="service__list">
+      <li class="service__item ">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item1.jpg);">
+          <div class="preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                Производство защитной сетки
+              </a>
+            </h2>
+            <h3 class="preview-card__text">
+              Защитная сетка изготавливается из полиэтилена низкой плотности. При использовании принимает форму уп..
+            </h3>
+          </div>
+        </article>
+      </li>
+      <li class="service__item">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item2.jpg);">
+          <div class=" preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                ОТДЕЛОЧНЫЕ РАБОТЫ
+              </a>
+            </h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Выравнивание полов, стяжка
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Укладка плитки, мозаики, камня
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Сооружение конструкций из гипсокартона
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Установка дверей, окон
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Еще...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="service__item">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item3.jpg);">
+          <div class=" preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                РЕМОНТ И ОБСЛУЖИВАНИЕ БЫТОВОЙ ТЕХНИКИ
+              </a>
+            </h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Ремонт и установка кондиционеров
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Ремонт холодильников
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Ремонт кофеварок и кофемашин
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Ремонт бытовой аудиотехники
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Еще...
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="service__item">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item4.jpg);">
+          <div class=" preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                УСЛУГИ ПРОКАТА И АРЕНДЫ
+              </a>
+            </h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Аренда инструмента и оборудования
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Аренда транспортных средств
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Аренда оборудования для выставок и шоу-бизнеса
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Аренда медицинской техники и оборудования
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Аренда офисной техники
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="service__item">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item5.jpg);">
+          <div class=" preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                ТУРИСТИЧЕСКИЕ УСЛУГИ
+              </a>
+            </h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Международный туризм
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Внутренний туризм
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Спортивный туризм и активный отдых
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Организация деловых поездок
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Санаторно-курортные оздоровительные услуги
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="service__item">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item6.jpg);">
+          <div class=" preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                УСЛУГИ СФЕРЫ ЗДОРОВЬЯ И КРАСОТЫ
+              </a>
+            </h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Косметологические услуги
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Услуги визажиста
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Маникюр и педикюр
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Ещё..
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="service__item">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item7.jpg);">
+          <div class=" preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                СЕЛЬСКОХОЗЯЙСТВЕННЫЕ УСЛУГИ
+              </a>
+            </h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Услуги по обработке почвы
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Услуги уборки урожая
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Услуги мелиорации
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Услуги мониторинга полей
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Агроанализы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="service__item">
+        <article class="preview-card service__bg"
+          style="background-image: url(images/services-items/services-item8.jpg);">
+          <div class=" preview-card__inner">
+            <h2 class="preview-card__title">
+              <a class="service__link underline" href="#">
+                БУХГАЛТЕРСКИЕ И АУДИТОРСКИЕ УСЛУГИ
+              </a>
+            </h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Аудиторские услуги
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Ведение бухгалтерского учета
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Составление и подача бухгалтерской отчетности
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Кадровые исследования
+                </a>
+              </li>
+              <li class="service__item">
+                <a class="service__sublink underline" href="#">
+                  Настройка и администрирования компьютерных сетей
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="company">
+    <div class="container">
+      <h3 class="company__title">
+        Ваша Компания
+      </h3>
+      <p class="company__text">
+        Мы любим то, чем занимаемся и это видно по результатам нашей работы. Наш уровень профессионализма растет с
+        каждым новым днем и с каждым новым клиентом. Мы хотим видеть Ваше удовлетворение от процесса нашего взаимного
+        общения. Мы гарантируем высокое качество работ по приемлемой цене и в точные сроки. Мы вовремя и на высоком
+        уровне реализуем самые сложные дизайнерские идеи и задачи клиентов.
+      </p>
+      <p class="company__text">
+        Наш коллектив состоит только из квалифицированных специалистов и опытных прорабов. В нашем арсенале все
+        необходимые строительные лицензии, новейшее оборудование и профессиональные наработки. Любой заказ оформляется
+        строго с юридическими условиями.
+      </p>
+      <p class="company__text">
+        При выборе специалистов не экономьте вашего времени и сил, потому как это в дальнейшем, повлияет на результат, к
+        которому Вы стремились. Большинство жителей региона, уже успели оценить преимущества работы с нами, попробуйте и
+        Вы. Не откладывайте, звоните и мы обязательно поможем вам в решении нелегких задач.
+      </p>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews__inner">
+        <div class="reviews__box">
+          <h3 class="reviews__title title">
+            Отзывы
+          </h3>
+          <a class="btn reviews__link" href="#">
+            Все отзывы
+          </a>
+        </div>
+        <div class="reviews__container swiper-container">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__content">
+                <p class="reviews__text-wrap">
+                  <span class="reviews__text">
+                    Пользовалась услугами агентства неоднократно, могу рекомендовать на все 100%. Такую внимательность к
+                    клиенту я не встречала больше нигде. Спасибо менеджерам за работу, обязательно приду еще и еще!
+                  </span>
+                </p>
+                <div class="reviews__author">
+                  <span class="reviews__img" style="background-image: url(images/photo-users/user1.jpg);"></span>
+                  <div class="reviews__description">
+                    <span class="reviews__name">
+                      Иванов Михаил
+                    </span>
+                    <span class="reviews__city">г.Киев</span>
+                    <div class="rating reviews__star">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input class="rating__input" type="radio" value="1" name="rating">
+                          <input class="rating__input" type="radio" value="2" name="rating">
+                          <input class="rating__input" type="radio" value="3" name="rating">
+                          <input class="rating__input" type="radio" value="4" name="rating">
+                          <input class="rating__input" type="radio" value="5" name="rating">
+                        </div>
+                      </div>
+                      <div class="rating__value visually-hidden">3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__content">
+                <p class="reviews__text-wrap">
+                  <span class="reviews__text">
+                    Сервис очень понравился. Я звонил ночью около 2:00 без особой надежды, что возьмут трубку, взяли. Договорились на следующий день, подали автомобиль к дому. Без опозданий. Цена удивила, качество автомобиля тоже. Автомобиль был новый, брал Сеат. Забрали автомобиль без замечаний. Спасибо. Рекомендую.
+                  </span>
+                </p>
+                <div class="reviews__author">
+                  <span class="reviews__img" style="background-image: url(images/photo-users/user2.jpg);"></span>
+                  <div class="reviews__description">
+                    <span class="reviews__name">
+                      Александр Василенко
+                    </span>
+                    <span class="reviews__city">г.Кривой рог</span>
+                    <div class="rating reviews__star">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input class="rating__input" type="radio" value="1" name="rating">
+                          <input class="rating__input" type="radio" value="2" name="rating">
+                          <input class="rating__input" type="radio" value="3" name="rating">
+                          <input class="rating__input" type="radio" value="4" name="rating">
+                          <input class="rating__input" type="radio" value="5" name="rating">
+                        </div>
+                      </div>
+                      <div class="rating__value visually-hidden">4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__content">
+                <p class="reviews__text-wrap">
+                  <span class="reviews__text">
+                    Делала несколько процедур (педикюр, маникюр, кератиновое восстановление). Стерилизация инструментов на высоком уровне (есть сухожаровой  шкаф, при тебе вскрывают крафт пакет), мастер работает в перчатках, пилки одноразовые. Персонал приветливый, есть кофе/чай. По записи все четко и без задержек.
+                  </span>
+                </p>
+                <div class="reviews__author">
+                  <span class="reviews__img" style="background-image: url(images/photo-users/user3.jpg);"></span>
+                  <div class="reviews__description">
+                    <span class="reviews__name">
+                      Сидорова Анна
+                    </span>
+                    <span class="reviews__city">г.Киев</span>
+                    <div class="rating reviews__star">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input class="rating__input" type="radio" value="1" name="rating">
+                          <input class="rating__input" type="radio" value="2" name="rating">
+                          <input class="rating__input" type="radio" value="3" name="rating">
+                          <input class="rating__input" type="radio" value="4" name="rating">
+                          <input class="rating__input" type="radio" value="5" name="rating">
+                        </div>
+                      </div>
+                      <div class="rating__value visually-hidden">4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__content">
+                <p class="reviews__text-wrap">
+                  <span class="reviews__text">
+                    Выражаю сердечную благодарность коллективу Компании за безукоризненное и плодотворное обслуживание деятельности фирмы по результатам семилетней совместной работы.           
+                  </span>
+                </p>
+                <div class="reviews__author">
+                  <span class="reviews__img" style="background-image: url(images/photo-users/user4.jpg);"></span>
+                  <div class="reviews__description">
+                    <span class="reviews__name">
+                      Антонюк Василий Владимирович
+                    </span>
+                    <span class="reviews__city">г.Днепр</span>
+                    <div class="rating reviews__star">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input class="rating__input" type="radio" value="1" name="rating">
+                          <input class="rating__input" type="radio" value="2" name="rating">
+                          <input class="rating__input" type="radio" value="3" name="rating">
+                          <input class="rating__input" type="radio" value="4" name="rating">
+                          <input class="rating__input" type="radio" value="5" name="rating">
+                        </div>
+                      </div>
+                      <div class="rating__value visually-hidden">5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="reviews__pagination pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects">
+    <div class="container">
+        <div class="projects__box">
+            <h3 class="projects__title title">
+                Выполненные проекты
+            </h3>
+            <a class="btn projects__btn" href="#">
+                Все проекты
+            </a>
+        </div>
+        <div class="projects__container swiper-container">
+            <ul class="projects__list swiper-wrapper">
+                <li class="projects__item swiper-slide">
+                    <a class="projects__link" href="images/project-items/project1.jpg">
+                        <img class="projects__img" src="images/project-items/project1.jpg" alt="img">
+                    </a>
+                </li>
+                <li class="projects__item swiper-slide">
+                    <a class="projects__link" href="images/project-items/project2.jpg">
+                        <img class="projects__img" src="images/project-items/project2.jpg" alt="img">
+                    </a>
+                </li>
+                <li class="projects__item swiper-slide">
+                    <a class="projects__link" href="images/project-items/project3.jpg">
+                        <img class="projects__img" src="images/project-items/project3.jpg" alt="img">
+                    </a>
+                </li>
+            </ul>
+            <div class="projects__pagination pagination"></div>
+        </div>
+    </div>
+</section>
+  <section class="advantages">
+    <div class="container">
+        <div class="advantages__title-wrap">
+            <h3 class="advantages__title title">
+                НАШИ ПРЕИМУЩЕСТВА
+            </h3>
+        </div>
+        <ul class="advantages__list">
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item1.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    10 лет на рынке
+                </span>
+            </li>
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item2.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    Точно соблюдаем сроки
+                </span>
+            </li>
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item3.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    Гарантированно укладываемся в смету
+                </span>
+            </li>
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item4.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    В штате только опытные мастера
+                </span>
+            </li>
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item5.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    Обеспечиваем авторский надзор
+                </span>
+            </li>
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item6.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    Постоянным клиентам скидки
+                </span>
+            </li>
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item7.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    Гарантия на все виды работ 12 месяцев
+                </span>
+            </li>
+            <li class="advantages__item">
+                <span class="advantages__img"
+                    style="background-image: url(images/advantages-icons/advantages-item8.png);">
+                    <span class="visually-hidden">
+                        section icon
+                    </span>
+                </span>
+                <span class="advantages__text">
+                    Работа по договору
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>
+  <section class="news">
+    <div class="container">
+        <div class="news__box">
+            <h3 class="news__title title">
+                НОВОСТИ
+            </h3>
+            <a class="btn news__btn" href="#">
+                Все новости
+            </a>
+        </div>
+        <ul class="news__list">
+            <li class="news__item">
+                <a class="news__info" href="#">
+                    <img class="news__img" src="images/news-items/news-item1.jpg" alt="img">
+                </a>
+                <a class="news__link" href="#">
+                    Больше снега
+                </a>
+                <span class="news__data">
+                    10.23.2018
+                </span>
+                <p class="news__text">
+                    Сплошной зимней сказкой отдыха считается Австрия. Но и здесь есть курорты, которые делают шарм
+                    австрийских Альп особенно неповторимым. Среди них - Лех (Lech) и Цюрс (Zürs), связанные
+                    подъемниками, а рядом ..
+                </p>
+            </li>
+            <li class="news__item">
+                <a class="news__info" href="#">
+                    <img class="news__img" src="images/news-items/news-item2.jpg" alt="img">
+                </a>
+                <a class="news__link" href="#">
+                    Бонусы для новосёлов
+                </a>
+                <span class="news__data">
+                    10.23.2018
+                </span>
+                <p class="news__text">
+                    Прежде чем клиент откроет двери своей новой квартиры, мы открываем для него двери в мир скидок.
+                    Обычно после покупки квартиры финансы имеют свойство исчезать, а так много еще нужно купить в новую
+                    квартиру...
+                </p>
+            </li>
+            <li class="news__item">
+                <a class="news__info" href="#">
+                    <img class="news__img" src="images/news-items/news-item3.jpg" alt="img">
+                </a>
+                <a class="news__link" href="#">
+                    Маникюр: зимние тренды
+                </a>
+                <span class="news__data">
+                    10.23.2018
+                </span>
+                <p class="news__text">
+                    Каждый сезон в моду входят различные новинки оформления ногтей, nail-мастерами придумываются новые
+                    интересные дизайны. Сейчас как никогда популярен комбинированный маникюр, в котором сочетаются
+                    разные техн..
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+  <section class="contact-form">
+    <div class="container">
+        <div class="contact-form__inner">
+            <h3 class="contact-form__title">
+                ЗАКАЖИТЕ УСЛУГИ
+            </h3>
+            <form class="contact-form__form">
+                <ul class="contact-form__list">
+                    <li class="contact-form__item">
+                        <input class="contact-form__input form-control" type="text" placeholder="Контактное лицо*">
+                    </li>
+                    <li class="contact-form__item">
+                        <input class="contact-form__input form-control" type="tel" placeholder="Телефон">
+                    </li>
+                    <li class="contact-form__item">
+                        <input class="contact-form__input form-control" type="email" placeholder="E-mail*">
+                    </li>
+                    <li class="contact-form__item">
+                        <input class="contact-form__input form-control" type="text" placeholder="Тип работ">
+                    </li>
+                </ul>
+                <textarea class="contact-form__textarea form-control" placeholder="Текст заявки*"></textarea>
+                <div class="invalid-message">
+                    <span class="invalid-message__title"></span>
+                    <ul class="invalid-message__list">
+                        <li class="invalid-message__item">
+                            "Контактное лицо" Это поле необходимо заполнить
+                        </li>
+                        <li class="invalid-message__item">
+                            "E-mail" Это поле необходимо заполнить
+                        </li>
+                        <li class="invalid-message__item">
+                            "Текст заявки" Это поле необходимо заполнить
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn contact-form__btn" type="button">Отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
+  <footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__list-wrap">
+                    <a class="footer__title" href="#">
+                        ОТДЕЛОЧНЫЕ РАБОТЫ
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Выравнивание полов, стяжка
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Укладка плитки, мозаики, камня
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Сооружение конструкций из гипсокартона
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Установка дверей, окон
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list-wrap">
+                    <a class="footer__title" href="#">
+                        РЕМОНТ И ОБСЛУЖИВАНИЕ БЫТОВОЙ ТЕХНИКИ
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Ремонт и установка кондиционеров
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Ремонт холодильников
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Ремонт кофеварок и кофемашин
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Ремонт бытовой аудиотехники
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list-wrap">
+                    <a class="footer__title" href="#">
+                        УСЛУГИ ПРОКАТА И АРЕНДЫ
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Аренда инструмента и оборудования
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Аренда транспортных средств
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Аренда оборудования для выставок и шоу-бизнеса
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Аренда медицинской техники и оборудования
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list-wrap">
+                    <a class="footer__title" href="#">
+                        ТУРИСТИЧЕСКИЕ УСЛУГИ
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Международный туризм
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Внутренний туризм
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Спортивный туризм и активный отдых
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Организация деловых поездок
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__box-wrap">
+        <div class="container">
+            <div class="footer__box">
+                <ul class="footer__contacts contacts">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:380505005000">
+                            +38 (050) 500 50 00
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--email" href="mailto:info@webosnova.com">
+                            info@webosnova.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__icons icons">
+                    <li class="icons__item">
+                        <a class="icons__link" href="#">
+                            <svg class="icons__svg icons__svg--facebook" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icons__item">
+                        <a class="icons__link" href="#">
+                            <svg class="icons__svg icons__svg--vk" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icons__item">
+                        <a class="icons__link" href="#">
+                            <svg class="icons__svg icons__svg--instagram" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn footer__btn" href="#">Заказать услуги</a>
+                <div class="footer__copyright">
+                    <span class="footer__text">
+                        © «Ваша компания» – полный комплекс услуг, 2021
+                    </span>
+                    <div class="footer__developer-wrap">
+                        WebOsnova - быстрое
+                        <a class="footer__developer" href="#">
+                            создание сайтов
+                        </a>
+                        и
+                        <a class="footer__developer" href="#">
+                            продвижение
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+  <a class="anchor" id="go-top" title="вверх">
+    <svg class="anchor__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
+      </path>
+    </svg>
+    <svg class="anchor__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
+      </path>
+    </svg>
+  </a>
+</body>
+
+</html>
