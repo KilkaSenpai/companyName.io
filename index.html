@@ -12,20 +12,17 @@
 <body>
   <header class="header">
   <button class="header__open-menu mobile-btn js-mobileOn" type="button">
-    <span class="visually-hidden">
-      Открыть меню
-    </span>
+    <span class="visually-hidden">Открыть меню</span>
   </button>
   <a class="header__search mobile-btn" href="#">
-    <span class="visually-hidden">
-      Кнопка для поиска
-    </span>
+    <span class="visually-hidden">Кнопка для поиска</span>
   </a>
   <div class="header__top-wrap">
     <div class="container">
       <div class="header__top">
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.svg" alt="logo">
+          <span class="visually-hidden">Логотип</span>
         </a>
         <ul class="contacts">
           <li class="contacts__item">
@@ -38,6 +35,7 @@
         <ul class="icons">
           <li class="icons__item">
             <a class="icons__link" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу в фейсбук</span>
               <svg class="icons__svg icons__svg--facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                 <path fill="currentColor"
                   d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
@@ -47,6 +45,7 @@
           </li>
           <li class="icons__item">
             <a class="icons__link" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу вконтакте</span>
               <svg class="icons__svg icons__svg--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <path fill="currentColor"
                   d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z">
@@ -56,6 +55,7 @@
           </li>
           <li class="icons__item">
             <a class="icons__link" href="#">
+              <span class="visually-hidden">Перейти на нашу страницу инстаграм</span>
               <svg class="icons__svg icons__svg--instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path fill="currentColor"
                   d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
@@ -107,13 +107,21 @@
           </ul>
         </nav>
         <form class="header__form">
-          <button class="header__btn open-js" type="button"></button>
+          <button class="header__btn open-js" type="button">
+            <span class="visually-hidden">Открыть строку поиска</span>
+          </button>
           <div class="header__box">
             <input class="header__input" type="text" id="search" placeholder="Поиск">
-            <label for="search"></label>
-            <button class="header__btn search-js" type="button"></button>
+            <label for="search">
+              <span class="visually-hidden">Строка поиска</span>
+            </label>
+            <button class="header__btn search-js" type="button">
+              <span class="visually-hidden">Кнопка поиск</span>
+            </button>
           </div>
-          <button class="header__btn close-js" type="button"></button>
+          <button class="header__btn close-js" type="button">
+            <span class="visually-hidden">Закрыть строку поиска</span>
+          </button>
         </form>
       </div>
       <nav class="header-menu">
@@ -509,7 +517,6 @@
 </nav>
     </div>
   </div>
-
 </header>
   <main class="content-wrap">
     <section class="service-preview">
@@ -608,8 +615,11 @@
     </ul>
     <div class="service-preview__arrows">
       <button class="service-preview__arrow service-preview__arrow--left" type="button">
+        <span class="visually-hidden">Пролистать слайд влево</span>
       </button>
-      <button class="service-preview__arrow service-preview__arrow--right" type="button"></button>
+      <button class="service-preview__arrow service-preview__arrow--right" type="button">
+        <span class="visually-hidden">Пролистать слайд вправо</span>
+      </button>
       <div class="service-preview__pagination pagination"></div>
     </div>
   </div>
@@ -932,149 +942,215 @@
     </div>
   </section>
     <section class="reviews">
-    <div class="container">
-      <div class="reviews__inner">
-        <div class="reviews__box">
-          <h3 class="reviews__title title">
-            Отзывы
-          </h3>
-          <a class="btn reviews__link" href="#">
-            Все отзывы
-          </a>
-        </div>
-        <div class="reviews__container swiper-container">
-          <ul class="reviews__list swiper-wrapper">
-            <li class="reviews__item swiper-slide">
-              <div class="reviews__content">
-                <p class="reviews__text-wrap">
-                  <span class="reviews__text">
-                    Пользовалась услугами агентства неоднократно, могу рекомендовать на все 100%. Такую внимательность к
-                    клиенту я не встречала больше нигде. Спасибо менеджерам за работу, обязательно приду еще и еще!
+  <div class="container">
+    <div class="reviews__inner">
+      <div class="reviews__box">
+        <h3 class="reviews__title title">
+          Отзывы
+        </h3>
+        <a class="btn reviews__link" href="#">
+          Все отзывы
+        </a>
+      </div>
+      <div class="reviews__container swiper-container">
+        <ul class="reviews__list swiper-wrapper">
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__content">
+              <p class="reviews__text-wrap">
+                <span class="reviews__text">
+                  Пользовалась услугами агентства неоднократно, могу рекомендовать на все 100%. Такую внимательность к
+                  клиенту я не встречала больше нигде. Спасибо менеджерам за работу, обязательно приду еще и еще!
+                </span>
+              </p>
+              <div class="reviews__author">
+                <span class="reviews__img" style="background-image: url(images/photo-users/user1.jpg);"></span>
+                <div class="reviews__description">
+                  <span class="reviews__name">
+                    Иванов Михаил
                   </span>
-                </p>
-                <div class="reviews__author">
-                  <span class="reviews__img" style="background-image: url(images/photo-users/user1.jpg);"></span>
-                  <div class="reviews__description">
-                    <span class="reviews__name">
-                      Иванов Михаил
-                    </span>
-                    <span class="reviews__city">г.Киев</span>
-                    <div class="rating reviews__star">
-                      <div class="rating__body">
-                        <div class="rating__active"></div>
-                        <div class="rating__items">
+                  <span class="reviews__city">г.Киев</span>
+                  <div class="rating reviews__star">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 1 из 5</span>
                           <input class="rating__input" type="radio" value="1" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 2 из 5</span>
                           <input class="rating__input" type="radio" value="2" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 3 из 5</span>
                           <input class="rating__input" type="radio" value="3" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 4 из 5</span>
                           <input class="rating__input" type="radio" value="4" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 5 из 5</span>
                           <input class="rating__input" type="radio" value="5" name="rating">
-                        </div>
+                        </label>
                       </div>
-                      <div class="rating__value visually-hidden">3</div>
                     </div>
+                    <div class="rating__value visually-hidden">3</div>
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="reviews__item swiper-slide">
-              <div class="reviews__content">
-                <p class="reviews__text-wrap">
-                  <span class="reviews__text">
-                    Сервис очень понравился. Я звонил ночью около 2:00 без особой надежды, что возьмут трубку, взяли. Договорились на следующий день, подали автомобиль к дому. Без опозданий. Цена удивила, качество автомобиля тоже. Автомобиль был новый, брал Сеат. Забрали автомобиль без замечаний. Спасибо. Рекомендую.
+            </div>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__content">
+              <p class="reviews__text-wrap">
+                <span class="reviews__text">
+                  Сервис очень понравился. Я звонил ночью около 2:00 без особой надежды, что возьмут трубку, взяли.
+                  Договорились на следующий день, подали автомобиль к дому. Без опозданий. Цена удивила, качество
+                  автомобиля тоже. Автомобиль был новый, брал Сеат. Забрали автомобиль без замечаний. Спасибо.
+                  Рекомендую.
+                </span>
+              </p>
+              <div class="reviews__author">
+                <span class="reviews__img" style="background-image: url(images/photo-users/user2.jpg);"></span>
+                <div class="reviews__description">
+                  <span class="reviews__name">
+                    Александр Василенко
                   </span>
-                </p>
-                <div class="reviews__author">
-                  <span class="reviews__img" style="background-image: url(images/photo-users/user2.jpg);"></span>
-                  <div class="reviews__description">
-                    <span class="reviews__name">
-                      Александр Василенко
-                    </span>
-                    <span class="reviews__city">г.Кривой рог</span>
-                    <div class="rating reviews__star">
-                      <div class="rating__body">
-                        <div class="rating__active"></div>
-                        <div class="rating__items">
+                  <span class="reviews__city">г.Кривой рог</span>
+                  <div class="rating reviews__star">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 1 из 5</span>
                           <input class="rating__input" type="radio" value="1" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 2 из 5</span>
                           <input class="rating__input" type="radio" value="2" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 3 из 5</span>
                           <input class="rating__input" type="radio" value="3" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 4 из 5</span>
                           <input class="rating__input" type="radio" value="4" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 5 из 5</span>
                           <input class="rating__input" type="radio" value="5" name="rating">
-                        </div>
+                        </label>
                       </div>
-                      <div class="rating__value visually-hidden">4</div>
                     </div>
+                    <div class="rating__value visually-hidden">4</div>
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="reviews__item swiper-slide">
-              <div class="reviews__content">
-                <p class="reviews__text-wrap">
-                  <span class="reviews__text">
-                    Делала несколько процедур (педикюр, маникюр, кератиновое восстановление). Стерилизация инструментов на высоком уровне (есть сухожаровой  шкаф, при тебе вскрывают крафт пакет), мастер работает в перчатках, пилки одноразовые. Персонал приветливый, есть кофе/чай. По записи все четко и без задержек.
+            </div>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__content">
+              <p class="reviews__text-wrap">
+                <span class="reviews__text">
+                  Делала несколько процедур (педикюр, маникюр, кератиновое восстановление). Стерилизация инструментов на
+                  высоком уровне (есть сухожаровой шкаф, при тебе вскрывают крафт пакет), мастер работает в перчатках,
+                  пилки одноразовые. Персонал приветливый, есть кофе/чай. По записи все четко и без задержек.
+                </span>
+              </p>
+              <div class="reviews__author">
+                <span class="reviews__img" style="background-image: url(images/photo-users/user3.jpg);"></span>
+                <div class="reviews__description">
+                  <span class="reviews__name">
+                    Сидорова Анна
                   </span>
-                </p>
-                <div class="reviews__author">
-                  <span class="reviews__img" style="background-image: url(images/photo-users/user3.jpg);"></span>
-                  <div class="reviews__description">
-                    <span class="reviews__name">
-                      Сидорова Анна
-                    </span>
-                    <span class="reviews__city">г.Киев</span>
-                    <div class="rating reviews__star">
-                      <div class="rating__body">
-                        <div class="rating__active"></div>
-                        <div class="rating__items">
+                  <span class="reviews__city">г.Киев</span>
+                  <div class="rating reviews__star">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 1 из 5</span>
                           <input class="rating__input" type="radio" value="1" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 2 из 5</span>
                           <input class="rating__input" type="radio" value="2" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 3 из 5</span>
                           <input class="rating__input" type="radio" value="3" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 4 из 5</span>
                           <input class="rating__input" type="radio" value="4" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 5 из 5</span>
                           <input class="rating__input" type="radio" value="5" name="rating">
-                        </div>
+                        </label>
                       </div>
-                      <div class="rating__value visually-hidden">4</div>
                     </div>
+                    <div class="rating__value visually-hidden">4</div>
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="reviews__item swiper-slide">
-              <div class="reviews__content">
-                <p class="reviews__text-wrap">
-                  <span class="reviews__text">
-                    Выражаю сердечную благодарность коллективу Компании за безукоризненное и плодотворное обслуживание деятельности фирмы по результатам семилетней совместной работы.           
+            </div>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__content">
+              <p class="reviews__text-wrap">
+                <span class="reviews__text">
+                  Выражаю сердечную благодарность коллективу Компании за безукоризненное и плодотворное обслуживание
+                  деятельности фирмы по результатам семилетней совместной работы.
+                </span>
+              </p>
+              <div class="reviews__author">
+                <span class="reviews__img" style="background-image: url(images/photo-users/user4.jpg);"></span>
+                <div class="reviews__description">
+                  <span class="reviews__name">
+                    Антонюк Василий Владимирович
                   </span>
-                </p>
-                <div class="reviews__author">
-                  <span class="reviews__img" style="background-image: url(images/photo-users/user4.jpg);"></span>
-                  <div class="reviews__description">
-                    <span class="reviews__name">
-                      Антонюк Василий Владимирович
-                    </span>
-                    <span class="reviews__city">г.Днепр</span>
-                    <div class="rating reviews__star">
-                      <div class="rating__body">
-                        <div class="rating__active"></div>
-                        <div class="rating__items">
+                  <span class="reviews__city">г.Днепр</span>
+                  <div class="rating reviews__star">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 1 из 5</span>
                           <input class="rating__input" type="radio" value="1" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 2 из 5</span>
                           <input class="rating__input" type="radio" value="2" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 3 из 5</span>
                           <input class="rating__input" type="radio" value="3" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 4 из 5</span>
                           <input class="rating__input" type="radio" value="4" name="rating">
+                        </label>
+                        <label class="rating__label">
+                          <span class="visually-hidden">Оценить на 5 из 5</span>
                           <input class="rating__input" type="radio" value="5" name="rating">
-                        </div>
+                        </label>
                       </div>
-                      <div class="rating__value visually-hidden">5</div>
                     </div>
+                    <div class="rating__value visually-hidden">5</div>
                   </div>
                 </div>
               </div>
-            </li>
-          </ul>
-          <div class="reviews__pagination pagination"></div>
-        </div>
+            </div>
+          </li>
+        </ul>
+        <div class="reviews__pagination pagination"></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
     <section class="projects">
     <div class="container">
         <div class="projects__box">
@@ -1282,31 +1358,31 @@
                                 Введите Ваше имя
                             </span>
                         </label>
-                        <input class="contact-form__input form-control" type="text" placeholder="Контактное лицо*">
+                        <input class="contact-form__input form-control" id="input1" type="text" placeholder="Контактное лицо*">
                     </li>
                     <li class="contact-form__item">
-                        <label for="input1">
+                        <label for="input2">
                             <span class="visually-hidden">
                                 Введите Ваш номер мобильного телефона
                             </span>
                         </label>
-                        <input class="contact-form__input form-control" type="tel" placeholder="Телефон">
+                        <input class="contact-form__input form-control" id="input2" type="tel" placeholder="Телефон">
                     </li>
                     <li class="contact-form__item">
-                        <label for="input1">
+                        <label for="input3">
                             <span class="visually-hidden">
                                 Введите Вашу электронную почту
                             </span>
                         </label>
-                        <input class="contact-form__input form-control" type="email" placeholder="E-mail*">
+                        <input class="contact-form__input form-control" id="input3" type="email" placeholder="E-mail*">
                     </li>
                     <li class="contact-form__item">
-                        <label for="input1">
+                        <label for="input4">
                             <span class="visually-hidden">
                                 Введите какой тип работы Вас интересует
                             </span>
                         </label>
-                        <input class="contact-form__input form-control" type="text" placeholder="Тип работ">
+                        <input class="contact-form__input form-control" id="input4" type="text" placeholder="Тип работ">
                     </li>
                 </ul>
                 <textarea class="contact-form__textarea form-control" placeholder="Текст заявки*"></textarea>
@@ -1463,6 +1539,7 @@
                 <ul class="footer__icons icons">
                     <li class="icons__item">
                         <a class="icons__link" href="#">
+                            <span class="visually-hidden">Перейти на нашу страницу фейсбук</span>
                             <svg class="icons__svg icons__svg--facebook" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 320 512">
                                 <path fill="currentColor"
@@ -1473,6 +1550,7 @@
                     </li>
                     <li class="icons__item">
                         <a class="icons__link" href="#">
+                            <span class="visually-hidden">Перейти на нашу страницу вконтакте</span>
                             <svg class="icons__svg icons__svg--vk" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 576 512">
                                 <path fill="currentColor"
@@ -1483,6 +1561,7 @@
                     </li>
                     <li class="icons__item">
                         <a class="icons__link" href="#">
+                            <span class="visually-hidden">Перейти на нашу страницу инстаграм</span>
                             <svg class="icons__svg icons__svg--instagram" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 448 512">
                                 <path fill="currentColor"
@@ -1516,6 +1595,7 @@
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
   <a class="anchor" id="go-top" title="вверх">
+    <span class="visually-hidden">Перейти на начало страницы</span>
     <svg class="anchor__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path fill="currentColor"
         d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
